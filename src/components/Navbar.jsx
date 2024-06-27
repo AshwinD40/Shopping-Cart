@@ -3,6 +3,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
+
 function Navbar() {
   const {cart} = useSelector((state) => state);
 
@@ -12,8 +13,8 @@ function Navbar() {
       <nav className='w-full max-w-6xl mx-auto h-[60px] flex flex-row justify-around items-center '>
       
         <NavLink to="/">
-          <div className=' w-[80px]  '>
-            <img src='https://t3.ftcdn.net/jpg/02/71/77/56/360_F_271775672_yo8ZgraN2IHGbfqP2k0PsLjwvmatUNUJ.jpg'/>
+          <div className=' w-[90px]   '>
+            <img src='./logo.jpeg' alt='logo'/>
           </div>  
         </NavLink>
 
