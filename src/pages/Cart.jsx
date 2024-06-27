@@ -19,15 +19,15 @@ function Cart() {
     <div>
       {
         cart.length > 0 ?
-         (<div className=' flex flex-row justify-center scroll-smooth '>
-             <div>
+         (<div className='   flex lg:flex-row md:flex-col sm:flex-col  flex-col justify-center scroll-smooth '>
+             <div className=' flex flex-col items-center '>
                 {
                   cart.map((item,index) => {
                     return <CartItem key={item.id} item={item} itemIndex={index}/>
                   })
                 }
              </div>
-             <div className=' flex flex-col justify-between mt-6 pl-20'>
+             <div className='  flex  lg:flex-col md:flex-row sm:flex-row lg:justify-between md:justify-between sm:justify-between mt-6 lg:pl-20 md:pl-20 sm:pl-20 md:pr-20 sm:pr-20'>
                 <div>
                   <div className=' text-green-700 text-xl font-semibold'>Your Cart</div>
                   <div className=' text-green-700 text-3xl font-bold uppercase'>Summary</div>
@@ -35,7 +35,7 @@ function Cart() {
                     <span className=' text-gray-900 text-xl font-semibold'>Total Item: {cart.length}</span>
                   </p>
                 </div>
-                <div className=' flex flex-col gap-y-2 mb-20'>
+                <div className=' flex flex-col gap-y-2 mb-20 '>
                   <div className=' flex gap-2'>
                     <p className=' text-gray-700 font-semibold '>Total Amount:</p>
                     <p className=' text-black font-bold '>${totleAmount}</p>
